@@ -25,3 +25,5 @@ Route::post('product/store','ProductController@store')->name('productStore');
 Route::get('cart/add/{product}' , 'CartController@add')->name('CartAdd');
 Route::get('cart/get', 'CartController@view')->name('showCart');
 Route::get('cart/del', 'CartController@empty')->name('delete');
+Route::put('update-cart', 'CartController@update')->name('updateCart');
+Route::delete('remove-from-cart', 'CartController@remove')->name('removeFromCart');

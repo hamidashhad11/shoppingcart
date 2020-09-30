@@ -63,3 +63,40 @@
         <h2>Cart is empty</h2>
     @endif
 @endsection
+
+@section('scripts')
+    <script type="text/javascript">
+        $(".update-cart").on('click', function (){
+            var element = $(this);
+            $.ajax({
+                url: '{{ url('update-cart') }}',
+                method: 'put',
+                data : {
+                    '_token': '{{ csrf_token() }}',
+                    id: element.attr('data-id'),
+                    quantity : element.parents("tr").find(".quantity").val()
+                },
+                success: function (data){
+                    window.location.reload();
+                }
+            });
+        });
+        $(".remove-from-cart").click(function (e) {
+            e.preventDefault();
+
+            var element = $(this);
+
+            if(confirm("Are you sure")) {
+                $.ajax({
+                    url: '{{ url('remove-from-cart') }}',
+                    method: "DELETE",
+                    data: {_token: '{{ csrf_token() }}', id: element.attr("data-id")},
+                    success: function (response) {
+                        window.location.reload();
+                    }
+                });
+            }
+        });
+
+    </script>
+@endsection
