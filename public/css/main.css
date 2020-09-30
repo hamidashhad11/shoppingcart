@@ -1,0 +1,162 @@
+
+body {
+    margin: 0;
+}
+
+#header-background-image_1{
+    position: absolute;
+    float: left;
+     z-index: -5;
+    height:920px;
+    width:65%
+}
+#header-background-image_2{
+    height:920px;
+    width:65%;
+    position: absolute;
+    right: 0;
+    float: right;
+    z-index: -1;
+}
+
+.main-logo{
+    font-size: 32.42274pt;
+    color: rgba(97, 233, 194, 255);
+    text-align: left;
+}
+
+#nike-side-logo {
+    position: absolute;
+    top: 500px;
+}
+
+#shop-brand-btn {
+    background-color: #82f4d3;
+    padding: 10px 40px;
+    font-size: 25pt;
+    color: rgba(50, 50, 55, 255);
+    text-decoration: none;
+    position: relative;
+    top: 250px;
+    left: 250px;
+}
+
+#shoe-img {
+    position: absolute;
+    top: 120px;
+    left: 33%;
+    z-index: -1;
+    width:600px;
+}
+
+.top-social-logo {
+    list-style-type: none;
+    position: absolute;
+    top: 500px;
+    right: 30px;
+}
+
+.top-social-logo-list{
+    padding: 10px 0;
+}
+
+.top-social-logo-con {
+    position: relative;
+    text-align: center;
+}
+
+.top-social-logo-img {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-btn {
+    background-color: #82f4d3;
+    padding: 10px 40px;
+    font-size: 15pt;
+    color: rgba(10, 10, 10, 255);
+    text-decoration: none;
+}
+
+.main-heading {
+    font-size: 45pt;
+    color: rgba(10, 10, 10, 255);
+}
+
+
+.container-class {
+    max-width: 100%;
+    padding: 2cm 5cm;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+.last-menu-list {
+    font-size: 15pt;
+    color: rgba(136, 136, 136, 255);
+}
+.last-menu-icon-list {
+    display: inline-block;
+    padding-top: 20px   ;
+    padding-right: 20px;
+}
+.link {
+    background-color: #82f4d400;
+    border: 1px solid white;
+    padding: 10px 20px;
+    width: 120px;
+    height: 30px;
+    font-size: 15pt;
+    color: white;
+    text-decoration: none;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+}
+
+.con {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    position: relative;
+}
+
+.con:hover {
+    background-color: #82f4d481;
+
+}
+.con:hover .img{
+    opacity: .1;
+}
+
+.img {
+    width: 190px;
+    height: 190px;
+}
+.con:hover .link {
+    visibility: visible;
+}
+
+.newsletter{
+    font-size: 15pt;
+    color: rgba(136, 136, 136, 255);
+    text-align: left;
+}
+
+.signup-input {
+    border:none;
+    padding: 10px;
+    box-shadow: 0 0 10px 5px #eeeded;
+    width: 300px;
+    height: 40px;
+}
+
+
